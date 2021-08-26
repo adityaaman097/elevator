@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator</title>
+    <link rel="stylesheet" href="elev.css">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header class="hero">
+        <div id="navbar" class="navbar">
+            <h1 class="logo">ELEVATOR</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!--Image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--Radio Button start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <!--Radio Button start-->
+
+                <!--Slide Image start-->
+                <div class="slide first">
+                    <img src="/1.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="/2.jpg" alt="">gfhtytfjuygjhb</img>
+                </div>
+                <div class="slide">
+                    <img src="/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="/5.jpg" alt="">
+                </div>
+            </div>
+            <!--Image slide End-->
+            <!--Auto Navigation Start-->
+            <div class="nav_auto">
+                <div class="auto_btn1"></div>
+                <div class="auto_btn2"></div>
+                <div class="auto_btn3"></div>
+                <div class="auto_btn4"></div>
+                <div class="auto_btn5"></div>
+                <!--Auto Navigation End-->
+            </div>
+            <!--Manual navigation start-->
+            <div class="nav_manual">
+                <label for="radio1" class="manual_btn"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+                <label for="radio4" class="manual_btn"></label>
+                <label for="radio5" class="manual_btn"></label>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' +
+                    counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            }, 5000)
+        </script>
+</body>
+
+</html>
